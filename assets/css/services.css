@@ -63,13 +63,9 @@
 .discovery-body { margin: 26px 0; color: var(--service-muted); font-size: 17px; line-height: 1.75; }
 .experience-note { margin: 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--service-gold); }
 .experience-note p { margin: 0; color: #5a333b; font-size: 19px; line-height: 1.6; }
-.service-result { padding: clamp(26px, 3vw, 36px); background: linear-gradient(140deg, #3a0e19, #261018); color: #fff; border-radius: 24px; box-shadow: 0 18px 44px rgba(58, 14, 25, 0.09); }
-.service-eyebrow { display: block; margin: 0 0 18px; color: #f4c6b5; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
-.service-result h3 { margin: 0; font-size: clamp(23px, 2.2vw, 28px); line-height: 1.35; letter-spacing: -0.02em; }
-.result-conditions { display: grid; gap: 0; margin: 26px 0; padding: 0; list-style: none; }
-.result-conditions li { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.15); color: #fff; font-size: 16px; font-weight: 600; }
-.result-conditions li::before { content: ''; flex: 0 0 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--service-gold); }
-.service-result > p { margin: 0; color: #eddee0; font-size: 16px; line-height: 1.75; }
+.service-result { align-self: start; padding: 6px 0 6px 24px; background: #faf8f5; color: var(--service-ink); border-left: 2px solid #dbc8ac; border-radius: 0; box-shadow: none; }
+.service-result h3 { margin: 0 0 18px; font-size: 20px; font-weight: 600; line-height: 1.4; letter-spacing: -0.01em; }
+.service-result > p { margin: 0; color: var(--service-muted); font-size: 17px; font-weight: 400; line-height: 1.7; }
 .project-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; padding: 0; margin: 0; list-style: none; counter-reset: project-step; }
 .project-steps li { counter-increment: project-step; min-width: 0; padding: 24px 20px; border: 1px solid var(--service-border); border-radius: 18px; background: #fff; }
 .step-number { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin-bottom: 24px; border-radius: 50%; background: #f9e8e9; color: #a91c2b; font-size: 13px; font-weight: 800; }
