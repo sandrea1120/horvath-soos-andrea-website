@@ -1,0 +1,133 @@
+/* Service details: scoped layouts for the Hungarian services page. */
+.service-details {
+  --service-ink: #1d2b2a;
+  --service-muted: #46514f;
+  --service-red: #c8202e;
+  --service-burgundy: #3a0e19;
+  --service-gold: #cdae7e;
+  --service-border: #e6ded4;
+}
+.service-details *, .service-details *::before, .service-details *::after,
+.service-jump-links, .service-jump-links * { box-sizing: border-box; }
+.service-section { padding: clamp(56px, 7vw, 96px) 24px; }
+.service-section--warm { background: #f2ede6; }
+.service-container { width: 100%; max-width: 1152px; margin: 0 auto; }
+.service-heading {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+.service-number {
+  color: var(--service-red);
+  font-size: clamp(44px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+.service-heading h2, .service-cooperation h2, .service-contact h2 {
+  margin: 0;
+  color: var(--service-ink);
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  overflow-wrap: break-word;
+}
+.service-heading p {
+  max-width: 830px;
+  margin: 18px 0 0;
+  color: var(--service-muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+.discovery-layout { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.question-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; padding: 0; margin: 0; list-style: none; }
+.question-grid li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 116px;
+  padding: 22px 22px 22px 30px;
+  background: #fff;
+  border: 1px solid var(--service-border);
+  border-radius: 18px;
+  color: var(--service-ink);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.question-grid li::before { position: absolute; content: ''; width: 3px; height: 24px; left: 0; top: calc(50% - 12px); background: var(--service-red); border-radius: 0 4px 4px 0; }
+.discovery-body { margin: 26px 0; color: var(--service-muted); font-size: 17px; line-height: 1.75; }
+.experience-note { margin: 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--service-gold); }
+.experience-note p { margin: 0; color: #5a333b; font-size: 19px; line-height: 1.6; }
+.service-result { padding: clamp(26px, 3vw, 36px); background: linear-gradient(140deg, #3a0e19, #261018); color: #fff; border-radius: 24px; box-shadow: 0 18px 44px rgba(58, 14, 25, 0.09); }
+.service-eyebrow { display: block; margin: 0 0 18px; color: #f4c6b5; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.service-result h3 { margin: 0; font-size: clamp(23px, 2.2vw, 28px); line-height: 1.35; letter-spacing: -0.02em; }
+.result-conditions { display: grid; gap: 0; margin: 26px 0; padding: 0; list-style: none; }
+.result-conditions li { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.15); color: #fff; font-size: 16px; font-weight: 600; }
+.result-conditions li::before { content: ''; flex: 0 0 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--service-gold); }
+.service-result > p { margin: 0; color: #eddee0; font-size: 16px; line-height: 1.75; }
+.project-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; padding: 0; margin: 0; list-style: none; counter-reset: project-step; }
+.project-steps li { counter-increment: project-step; min-width: 0; padding: 24px 20px; border: 1px solid var(--service-border); border-radius: 18px; background: #fff; }
+.step-number { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin-bottom: 24px; border-radius: 50%; background: #f9e8e9; color: #a91c2b; font-size: 13px; font-weight: 800; }
+.step-number::before { content: counter(project-step, decimal-leading-zero); }
+.project-steps h3, .grant-tasks h3 { margin: 0 0 12px; color: var(--service-ink); font-size: 18px; line-height: 1.4; font-weight: 800; }
+.project-steps p, .grant-tasks p { margin: 0; color: var(--service-muted); font-size: 16px; line-height: 1.7; }
+.service-takeaway { margin: 24px 0 0; padding: 22px 26px; border-left: 3px solid var(--service-red); border-radius: 0 14px 14px 0; background: #e9e1d6; color: var(--service-burgundy); font-size: 18px; line-height: 1.6; }
+.finance-panel { margin-left: 96px; padding: 30px; border: 1px solid var(--service-border); border-radius: 22px; background: #fff; }
+.finance-tags { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.finance-tags li { padding: 12px 18px; border: 1px solid #e4d6c2; border-radius: 12px; background: #faf7f1; color: #3e2e27; font-size: 16px; font-weight: 600; line-height: 1.5; }
+.grant-tasks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 0; padding: 0; list-style: none; }
+.grant-tasks li { min-width: 0; padding: 30px; background: #fff; border: 1px solid var(--service-border); border-radius: 20px; }
+.service-icon { display: block; width: 30px; height: 30px; margin-bottom: 24px; color: var(--service-red); }
+.service-cooperation h2 { text-align: center; margin-bottom: 32px; }
+.cooperation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.cooperation-card { padding: clamp(26px, 3vw, 38px); border: 1px solid var(--service-border); border-radius: 22px; background: #fff; }
+.cooperation-card::before { content: ''; display: block; width: 38px; height: 3px; margin-bottom: 24px; background: var(--service-red); }
+.cooperation-card h3 { margin: 0 0 16px; color: var(--service-ink); font-size: 25px; line-height: 1.3; }
+.cooperation-card p { margin: 0; color: var(--service-muted); font-size: 17px; line-height: 1.75; }
+.cooperation-note { max-width: 780px; margin: 28px auto 0; text-align: center; color: #65564d; font-size: 17px; line-height: 1.7; }
+.service-contact { padding: clamp(56px, 7vw, 88px) 24px; background: linear-gradient(115deg, rgba(58, 14, 25, 0.97), rgba(126, 21, 39, 0.90)), url('../img/motivum-cta.jpg') center / cover; }
+.service-contact .service-container { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 48px; align-items: center; }
+.service-contact h2 { max-width: 720px; color: #fff; font-size: clamp(30px, 3.2vw, 42px); }
+.service-contact p { max-width: 720px; margin: 20px 0 0; color: #f3e4e7; font-size: 18px; line-height: 1.75; }
+.service-contact-button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 56px; max-width: 100%; padding: 16px 24px; border-radius: 12px; background: #fff; color: #3a0e19; font-size: 16px; font-weight: 800; text-decoration: none; text-align: center; }
+.service-contact-button svg { width: 20px; height: 20px; flex: 0 0 auto; }
+.service-jump-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.service-jump-links a { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 16px; border: 1px solid rgba(255,255,255,0.2); border-radius: 14px; background: #fff; color: #1d2b2a; text-decoration: none; font-size: 14px; line-height: 1.5; font-weight: 600; }
+.service-jump-links .jump-number { color: #c8202e; font-size: 14px; font-weight: 800; flex: 0 0 auto; }
+@media (max-width: 1100px) {
+  .project-steps { grid-template-columns: 1fr; gap: 12px; }
+  .project-steps li { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 22px; padding: 22px 26px; }
+  .step-number { margin: 0; }
+  .project-steps h3 { margin-bottom: 6px; }
+  .service-jump-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .service-heading { grid-template-columns: 52px minmax(0, 1fr); gap: 18px; margin-bottom: 28px; }
+  .service-number { font-size: 44px; }
+  .discovery-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .finance-panel { margin-left: 0; }
+  .grant-tasks { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .grant-tasks li { padding: 26px; }
+  .service-icon { margin-bottom: 18px; }
+  .service-contact .service-container { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .service-contact-button { justify-self: start; }
+}
+@media (max-width: 560px) {
+  .service-heading { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .service-heading h2 { font-size: 29px; }
+  .service-heading p { margin-top: 16px; font-size: 17px; }
+  .service-number { font-size: 42px; }
+  .question-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .question-grid li { min-height: 0; padding: 18px 22px; }
+  .project-steps li { padding: 22px; gap: 16px; }
+  .finance-panel { padding: 20px; }
+  .finance-tags { gap: 10px; }
+  .finance-tags li { width: 100%; padding: 12px 14px; font-size: 15px; }
+  .cooperation-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .service-jump-links { grid-template-columns: minmax(0, 1fr); }
+  .service-jump-links a { padding: 14px 16px; }
+}
