@@ -19,6 +19,7 @@ Static website for Horváth-Soós Andrea, built from the "Horváth-Soós Andrea 
 - `*/index.html` – each page; layout and colours are inline, as exported from the design.
 - `assets/css/site.css` – shared background art, fonts helper (`.serif`), mobile menu, focus styles.
 - `assets/css/services.css` – responsive cards and layouts for the services page.
+- `assets/css/finance.css` – responsive financial-system content and consultation form.
 - `assets/js/site.js` – mobile menu, category filters, forms.
 - `assets/img/` – photos and background motifs.
 
@@ -43,6 +44,5 @@ To receive submissions directly, create a form endpoint (for example on Formspre
 ## Still to fill in (placeholders from the design)
 
 - `[TAX NUMBER]` in the English footer
-- `[Terméknév]`, `[Induló ár / csomagok – kiegészítendő]` on the finance-system page
 - Blog posts: `[DÁTUM]`, `[X] perc`, and the articles themselves (cards currently link to `#`)
 - Privacy notice (Adatkezelési tájékoztató) and legal notice (Impresszum) pages (links currently point to `#`)
