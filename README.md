@@ -6,8 +6,8 @@ Static website for Horváth-Soós Andrea, built from the "Horváth-Soós Andrea 
 
 | URL | Page |
 | --- | --- |
-| `/` | Főoldal |
-| `/rolam/` | Bemutatkozás, szakmai út, képzések és tanúsítványok (filterable) |
+| `/` | Rólam – kezdőoldal: bemutatkozás, szakmai út, képzések és tanúsítványok (filterable) |
+| `/rolam/` | Redirect to `/`, preserving query strings and fragment identifiers |
 | `/szolgaltatasok/` | Szolgáltatások |
 | `/penzugyi-rendszer/` | Pénzügyi rendszer (separate blue product branding) |
 | `/blog/` | Blog (filterable by category) |
@@ -41,7 +41,7 @@ To receive submissions directly, create a form endpoint (for example on Formspre
 
 ## Still to fill in (placeholders from the design)
 
-- `[ADÓSZÁM]` in the homepage footer, `[TAX NUMBER]` in the English footer
+- `[TAX NUMBER]` in the English footer
 - `[Terméknév]`, `[Induló ár / csomagok – kiegészítendő]` on the finance-system page
 - `[Díjazás / csomag – kiegészítendő]` on the services page
 - Blog posts: `[DÁTUM]`, `[X] perc`, and the articles themselves (cards currently link to `#`)
