@@ -28,15 +28,15 @@ textarea:focus-visible {
   letter-spacing: 0;
 }
 
-/* Background art (data-graphic motif) */
-.art-hero { background-image: url(../img/motivum-hero.jpg); background-size: cover; background-position: right center; background-repeat: no-repeat; }
-.art-band { background-image: url(../img/motivum-band.jpg); background-size: cover; background-position: right center; background-repeat: no-repeat; }
-.art-cta  { background-image: url(../img/motivum-cta.jpg);  background-size: cover; background-position: center;       background-repeat: no-repeat; }
-.art-fin  { background-image: url(../img/motivum-kek.jpg);  background-size: cover; background-position: right center; background-repeat: no-repeat; }
+/* A translucent colour layer softens the graph's glow behind the text. */
+.art-hero { background-image: linear-gradient(rgba(58, 14, 25, 0.48), rgba(58, 14, 25, 0.48)), url(../img/motivum-hero.jpg); background-size: cover; background-position: right center; background-repeat: no-repeat; }
+.art-band { background-image: linear-gradient(rgba(58, 14, 25, 0.48), rgba(58, 14, 25, 0.48)), url(../img/motivum-band.jpg); background-size: cover; background-position: right center; background-repeat: no-repeat; }
+.art-cta  { background-image: linear-gradient(rgba(58, 14, 25, 0.48), rgba(58, 14, 25, 0.48)), url(../img/motivum-cta.jpg);  background-size: cover; background-position: center;       background-repeat: no-repeat; }
+.art-fin  { background-image: linear-gradient(rgba(6, 15, 31, 0.48), rgba(6, 15, 31, 0.48)), url(../img/motivum-kek.jpg);  background-size: cover; background-position: right center; background-repeat: no-repeat; }
 .art-flow { background-image: url(../img/motivum-flow.png); background-size: cover; background-position: center;       background-repeat: no-repeat; }
 .art-kap  {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 420px, #FAF8F5 420px),
+    linear-gradient(180deg, rgba(58, 14, 25, 0.48) 0, rgba(58, 14, 25, 0.48) 420px, #FAF8F5 420px),
     url(../img/motivum-band.jpg) right top / auto 420px no-repeat,
     #3A0E19;
 }
